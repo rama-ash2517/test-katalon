@@ -17,11 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('API/Create-User'))
+Mobile.startApplication('/Users/ramadhanash/Documents/Learn/Selenium/Katalon2/test-katalon.git/Apps/APIDemos.apk', true)
 
-WS.verifyResponseStatusCode(response, 201)
+Mobile.tap(findTestObject('Object Repository/Android/android.widget.Button - OK'), 0)
 
-WS.verifyElementPropertyValue(response, 'name', 'Testing')
+Mobile.tap(findTestObject('Object Repository/Android/android.widget.TextView - Text'), 0)
 
-WS.verifyElementPropertyValue(response, 'job', 'leader')
+Mobile.tap(findTestObject('Object Repository/Android/android.widget.TextView - LogTextBox'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Android/android.widget.Button - Add'), 0)
+
+Mobile.getText(findTestObject('Object Repository/Android/android.widget.TextView - This is a test (1)'), 0)
+
+Mobile.verifyElementText(findTestObject('Android/android.widget.TextView - This is a test (1)'), 'This is a test')
+
+Mobile.closeApplication()
 

@@ -17,11 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('API/Create-User'))
+Mobile.startApplication('/Users/ramadhanash/Documents/Learn/Selenium/Katalon2/test-katalon.git/Apps/APIDemos.apk', true)
 
-WS.verifyResponseStatusCode(response, 201)
+Mobile.getText(findTestObject('Object Repository/Android/android.widget.TextView - This is a test (1)'), 0)
 
-WS.verifyElementPropertyValue(response, 'name', 'Testing')
-
-WS.verifyElementPropertyValue(response, 'job', 'leader')
+Mobile.closeApplication()
 

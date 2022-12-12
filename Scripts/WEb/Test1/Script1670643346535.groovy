@@ -21,32 +21,32 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
 
-WebUI.click(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/a_Make Appointment'))
+WebUI.click(findTestObject('null'))
 
 WebUI.verifyTextPresent('Login', false)
 
-WebUI.setText(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/input_Username_username'), 'John Doe')
+WebUI.setText(findTestObject('null'), 'John Doe')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/input_Password_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
+WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
 
-WebUI.click(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/button_Login'))
+WebUI.click(findTestObject('null'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center        _5b4107'), 
+WebUI.selectOptionByValue(findTestObject('null'), 
     'Seoul CURA Healthcare Center', true)
 
-WebUI.click(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/input_Apply for hospital readmission_hospit_63901f'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/input_Medicaid_programs'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/td_31'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/textarea_Comment_comment'), 'test')
+WebUI.setText(findTestObject('null'), 'test')
 
-WebUI.click(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/button_Book Appointment'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Web/Page_CURA Healthcare Service/a_Go to Homepage'))
+WebUI.click(findTestObject('null'))
 
 WebUI.closeBrowser()
 
